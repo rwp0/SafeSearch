@@ -2,4 +2,6 @@
 
 Install in addition to =hblock= hosts.
 
-    sudo make
+#+BEGIN_SRC shell
+  sudo make
+#+END_SRC
