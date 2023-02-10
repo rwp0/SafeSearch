@@ -1,0 +1,5 @@
+* Lock Google SafeSearch with hosts file
+
+Install in addition to =hblock= hosts.
+
+    sudo make

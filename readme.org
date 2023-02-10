@@ -1,5 +1,0 @@
-* safesearch
-
-*Google SafeSearch*, *1.1.1.1 for Families*
-
-=dnsmasq= in =NetworkManager=
