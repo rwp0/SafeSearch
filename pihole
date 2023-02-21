@@ -1,0 +1,11 @@
+#! /usr/bin/env perl
+
+use v5.36;
+use Path::Tiny;
+
+my %files = (
+  google => path( 'GoogleSafeSearch.hosts' ) ,
+  pihole => path( '/home/regular/etc-pihole/custom.list' ) ,
+);
+
+say $files{pihole} -> spew( $files{google} -> lines );
