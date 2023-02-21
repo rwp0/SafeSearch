@@ -5,7 +5,8 @@ use Path::Tiny;
 
 my %files = (
   google => path( 'GoogleSafeSearch.hosts' ) ,
-  pihole => path( '/home/regular/etc-pihole/custom.list' ) ,
+  pihole => path( '~/etc-pihole/custom.list' ) ,
 );
 
-say $files{pihole} -> spew( $files{google} -> lines );
+say 'Contents appended successfully'
+  if $files{pihole} -> append( $files{google} -> lines ); # returns 1
