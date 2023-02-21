@@ -9,8 +9,9 @@ my %files = (
 );
 
 my $append = $files{pihole} -> append( $files{google} -> lines );
+# May pass '{ truncate => 1 }' to overwrite instead of appending
 
-# User information
+# For informing the user
 if ( $append == 1 ) {
   say 'Contents appended successfully'
 }
