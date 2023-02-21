@@ -8,5 +8,12 @@ my %files = (
   pihole => path( '~/etc-pihole/custom.list' ) ,
 );
 
-say 'Contents appended successfully'
-  if $files{pihole} -> append( $files{google} -> lines ); # returns 1
+my $append = $files{pihole} -> append( $files{google} -> lines );
+
+# User information
+if ( $append == 1 ) {
+  say 'Contents appended successfully'
+}
+else {
+  say 'There was a problem appending to the file'
+}
